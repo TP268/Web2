@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '@/components/Header';
+import Layout from '@/components/Layout';
 import ProductDetailCard from '@/components/ProductDetailCard';
 import { searchProduct, Product } from '@/services/productService';
 import { useToast } from '@/components/ui/use-toast';
@@ -28,6 +28,8 @@ const ProductDetail = () => {
       
       if (foundProduct) {
         setProduct(foundProduct);
+        // Update page title with product info
+        document.title = `${foundProduct.modelNumber} | PneumaFinder`;
       } else {
         toast({
           title: "Product not found",
@@ -39,19 +41,22 @@ const ProductDetail = () => {
       
       setLoading(false);
     }, 500);
+
+    // Reset title when leaving page
+    return () => {
+      document.title = "PneumaFinder";
+    };
   }, [modelNumber, toast, navigate]);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      
-      <main className="flex-1 container mx-auto px-4 py-12">
+    <Layout>
+      <div className="container mx-auto px-4 py-12">
         {loading ? (
           <div className="flex items-center justify-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pneumatic"></div>
           </div>
         ) : product ? (
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <ProductDetailCard product={product} />
           </div>
         ) : (
@@ -59,14 +64,8 @@ const ProductDetail = () => {
             <p>Product not found. Redirecting...</p>
           </div>
         )}
-      </main>
-      
-      <footer className="border-t py-6 bg-white">
-        <div className="container mx-auto px-4 text-center text-sm text-gray-500">
-          <p>© 2025 PneumaFinder. All rights reserved.</p>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
