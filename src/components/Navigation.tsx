@@ -25,15 +25,6 @@ const Navigation = () => {
         { name: 'Air Preparation', path: '/products/air-preparation' },
       ]
     },
-    { 
-      name: 'Solutions',
-      path: '/solutions',
-      dropdown: [
-        { name: 'Air Leakage', path: '/solutions/air-leakage' },
-        { name: 'Slow Actuation', path: '/solutions/slow-actuation' },
-        { name: 'Energy Efficiency', path: '/solutions/energy-efficiency' },
-      ] 
-    },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];

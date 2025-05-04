@@ -7,22 +7,31 @@ import { getAllProducts, getCategories, Product } from '@/services/productServic
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
+import { Checkbox } from '@/components/ui/checkbox';
 import { Search } from 'lucide-react';
 
 const Products = () => {
   const allProducts = getAllProducts();
   const categories = getCategories();
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-  // Filter products based on search and category
+  const toggleCategory = (category: string) => {
+    setSelectedCategories(current =>
+      current.includes(category)
+        ? current.filter(c => c !== category)
+        : [...current, category]
+    );
+  };
+
+  // Filter products based on search and selected categories
   const filteredProducts = allProducts.filter(product => {
     const matchesSearch = searchQuery === '' || 
       product.modelNumber.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.brand.toLowerCase().includes(searchQuery.toLowerCase());
     
-    const matchesCategory = selectedCategory === null || product.category === selectedCategory;
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category);
     
     return matchesSearch && matchesCategory;
   });
@@ -61,19 +70,19 @@ const Products = () => {
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <h3 className="font-medium mb-3">Categories</h3>
                 <div className="space-y-2">
-                  <div 
-                    className={`cursor-pointer px-2 py-1 rounded ${selectedCategory === null ? 'bg-pneumatic text-white' : 'hover:bg-gray-100'}`}
-                    onClick={() => setSelectedCategory(null)}
-                  >
-                    All Categories
-                  </div>
                   {categories.map((category, index) => (
-                    <div 
-                      key={index}
-                      className={`cursor-pointer px-2 py-1 rounded ${selectedCategory === category ? 'bg-pneumatic text-white' : 'hover:bg-gray-100'}`}
-                      onClick={() => setSelectedCategory(category)}
-                    >
-                      {category}
+                    <div key={index} className="flex items-center space-x-2">
+                      <Checkbox 
+                        id={`category-${index}`}
+                        checked={selectedCategories.includes(category)}
+                        onCheckedChange={() => toggleCategory(category)}
+                      />
+                      <label 
+                        htmlFor={`category-${index}`}
+                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                      >
+                        {category}
+                      </label>
                     </div>
                   ))}
                 </div>
@@ -110,7 +119,11 @@ const ProductCard = ({ product }: { product: Product }) => {
           <Badge>{product.category}</Badge>
           <span className="text-sm text-gray-500">{product.brand}</span>
         </div>
-        <CardTitle className="mt-2">{product.modelNumber}</CardTitle>
+        <div className="h-40 bg-gray-200 mt-2 rounded flex items-center justify-center">
+          {/* Product image placeholder */}
+          <div className="text-5xl text-gray-400">{product.modelNumber[0]}</div>
+        </div>
+        <CardTitle className="mt-3">{product.modelNumber}</CardTitle>
         <CardDescription className="line-clamp-2">
           {product.description}
         </CardDescription>
