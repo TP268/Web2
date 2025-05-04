@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-pneumatic flex items-center justify-center">
@@ -46,16 +46,6 @@ const Footer = () => {
               <li><Link to="/products/valves" className="text-gray-300 hover:text-white">Valves</Link></li>
               <li><Link to="/products/air-preparation" className="text-gray-300 hover:text-white">Air Preparation</Link></li>
               <li><Link to="/products" className="text-gray-300 hover:text-white">All Products</Link></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Solutions</h3>
-            <ul className="space-y-2">
-              <li><Link to="/solutions/air-leakage" className="text-gray-300 hover:text-white">Air Leakage</Link></li>
-              <li><Link to="/solutions/slow-actuation" className="text-gray-300 hover:text-white">Slow Actuation</Link></li>
-              <li><Link to="/solutions/energy-efficiency" className="text-gray-300 hover:text-white">Energy Efficiency</Link></li>
-              <li><Link to="/solutions" className="text-gray-300 hover:text-white">All Solutions</Link></li>
             </ul>
           </div>
           
