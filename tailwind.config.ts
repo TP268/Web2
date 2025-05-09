@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				pneumatic: {
-					DEFAULT: '#0EA5E9',
-					light: '#38BDF8',
-					dark: '#0369A1',
+					DEFAULT: '#ea384c',
+					light: '#f76476',
+					dark: '#d01c30',
 					foreground: '#FFFFFF'
 				}
 			},
