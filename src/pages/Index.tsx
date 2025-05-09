@@ -32,21 +32,21 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gray-800 text-white">
+      <section className="relative bg-gradient-to-br from-pneumatic-dark via-pneumatic to-pneumatic-light text-white">
         <div className="container mx-auto px-4 py-16 md:py-28 text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
               Expert Pneumatic Solutions for Your Industrial Needs
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-200">
+            <p className="text-lg md:text-xl mb-8 text-gray-100">
               We specialize in finding the right pneumatic components and solutions for your specific applications. 
               Solving problems, not just selling parts.
             </p>
             <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <Button asChild size="lg" className="text-lg">
+              <Button asChild size="lg" className="text-lg bg-white text-pneumatic hover:bg-gray-100 hover:text-pneumatic-dark">
                 <Link to="/products">Browse Products</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg bg-white/10 hover:bg-white/20">
+              <Button asChild variant="outline" size="lg" className="text-lg border-white text-white hover:bg-white/20">
                 <Link to="/contact">Request Quote</Link>
               </Button>
             </div>
@@ -65,8 +65,8 @@ const Index = () => {
                 to={`/products/${category.toLowerCase()}`}
                 className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105"
               >
-                <div className="h-40 bg-gray-200 flex items-center justify-center">
-                  <span className="text-4xl text-gray-400">
+                <div className="h-40 bg-secondary flex items-center justify-center">
+                  <span className="text-4xl text-pneumatic">
                     {/* Placeholder for category images */}
                     {category[0]}
                   </span>
@@ -86,7 +86,7 @@ const Index = () => {
 
       {/* Product Search Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="max-w-xl mx-auto bg-white shadow-xl rounded-lg p-6 md:p-8">
+        <div className="max-w-xl mx-auto bg-white shadow-xl rounded-lg p-6 md:p-8 border border-gray-100">
           <h2 className="text-2xl font-bold text-center mb-6">Find Your Product</h2>
           <ProductSearch />
         </div>
@@ -109,7 +109,7 @@ const Index = () => {
                   <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
                     <div className="p-2">
                       <div className="rounded-full w-24 h-24 mx-auto bg-white border flex items-center justify-center shadow-sm hover:shadow-md transition-all">
-                        <div className="text-3xl font-bold text-gray-700">{brand.logo}</div>
+                        <div className="text-3xl font-bold text-pneumatic">{brand.logo}</div>
                       </div>
                       <p className="text-center mt-2 text-gray-700 font-medium">{brand.name}</p>
                     </div>
@@ -129,7 +129,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow border">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+              <div className="w-12 h-12 rounded-full bg-secondary"></div>
               <div className="ml-4">
                 <h3 className="font-semibold">John Smith</h3>
                 <p className="text-sm text-gray-500">Manufacturing Manager</p>
@@ -142,7 +142,7 @@ const Index = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow border">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+              <div className="w-12 h-12 rounded-full bg-secondary"></div>
               <div className="ml-4">
                 <h3 className="font-semibold">Sarah Johnson</h3>
                 <p className="text-sm text-gray-500">Maintenance Supervisor</p>
@@ -155,7 +155,7 @@ const Index = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow border">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+              <div className="w-12 h-12 rounded-full bg-secondary"></div>
               <div className="ml-4">
                 <h3 className="font-semibold">Michael Chen</h3>
                 <p className="text-sm text-gray-500">Process Engineer</p>

@@ -27,13 +27,15 @@ const Header = () => {
         </Link>
         
         <div className="flex items-center space-x-4">
-          <Button variant="outline" size="sm" className="hidden sm:flex items-center gap-2">
-            <Mail size={18} />
-            <span>Contact Us</span>
-          </Button>
-          <Button variant="outline" size="sm" className="sm:hidden p-2">
-            <Mail size={18} />
-          </Button>
+          <Link to="/contact">
+            <Button variant="outline" size="sm" className="hidden sm:flex items-center gap-2 text-pneumatic hover:text-pneumatic-dark hover:border-pneumatic">
+              <Mail size={18} />
+              <span>Contact Us</span>
+            </Button>
+            <Button variant="outline" size="sm" className="sm:hidden p-2 text-pneumatic hover:border-pneumatic">
+              <Mail size={18} />
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
