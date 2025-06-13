@@ -351,8 +351,284 @@ const dummyProducts: Product[] = [
       "High-capacity applications"
     ],
     relatedProducts: ["PU-14MM-BLU", "FRL-C400"]
+  },
+  {
+    id: 12,
+    modelNumber: "SK0001",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Complete seal kit for standard pneumatic cylinders. Includes all necessary O-rings, gaskets, and seals for maintenance and repair operations.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Standard Cylinder Seal Kit",
+      "Compatibility": "40mm bore cylinders",
+      "Material": "NBR (Nitrile)",
+      "Temperature Range": "-20°C to 80°C",
+      "Pressure Rating": "Up to 10 bar"
+    },
+    features: [
+      "Complete seal replacement kit",
+      "High-quality NBR seals",
+      "Easy installation",
+      "Long service life"
+    ],
+    applications: [
+      "Pneumatic cylinder maintenance",
+      "Preventive maintenance programs",
+      "Emergency repair situations"
+    ],
+    relatedProducts: ["P-CYL-125-A", "SK0002"]
+  },
+  {
+    id: 13,
+    modelNumber: "SK0002",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Heavy-duty seal kit for high-pressure pneumatic applications. Features PTFE seals for extended durability and chemical resistance.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Heavy-Duty Seal Kit",
+      "Compatibility": "50mm bore cylinders",
+      "Material": "PTFE/NBR composite",
+      "Temperature Range": "-30°C to 100°C",
+      "Pressure Rating": "Up to 16 bar"
+    },
+    features: [
+      "PTFE enhanced seals",
+      "Chemical resistant",
+      "High-pressure capability",
+      "Extended wear life"
+    ],
+    applications: [
+      "High-pressure pneumatic systems",
+      "Chemical processing equipment",
+      "Industrial automation"
+    ],
+    relatedProducts: ["SK0001", "SK0003"]
+  },
+  {
+    id: 14,
+    modelNumber: "SK0003",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Compact seal kit designed for small bore pneumatic cylinders and actuators. Perfect for precision automation applications.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Compact Seal Kit",
+      "Compatibility": "25mm bore cylinders",
+      "Material": "FKM (Viton)",
+      "Temperature Range": "-10°C to 120°C",
+      "Pressure Rating": "Up to 12 bar"
+    },
+    features: [
+      "High-temperature capability",
+      "Compact design",
+      "Precision molded seals",
+      "Quick replacement"
+    ],
+    applications: [
+      "Precision automation",
+      "Robotics applications",
+      "Medical equipment"
+    ],
+    relatedProducts: ["SK0002", "SK0004"]
+  },
+  {
+    id: 15,
+    modelNumber: "SK0004",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Universal seal kit compatible with multiple cylinder sizes. Includes variety pack of common seal sizes for workshop inventory.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Universal Seal Kit",
+      "Compatibility": "Multiple cylinder sizes",
+      "Material": "NBR/EPDM mix",
+      "Temperature Range": "-25°C to 90°C",
+      "Pressure Rating": "Up to 14 bar"
+    },
+    features: [
+      "Multiple seal sizes included",
+      "Workshop convenience pack",
+      "Color-coded organization",
+      "Cost-effective solution"
+    ],
+    applications: [
+      "Maintenance workshops",
+      "Multi-machine facilities",
+      "Service technicians"
+    ],
+    relatedProducts: ["SK0003", "SK0005"]
+  },
+  {
+    id: 16,
+    modelNumber: "SK0005",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Food-grade seal kit certified for use in food processing and pharmaceutical applications. FDA approved materials.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Food-Grade Seal Kit",
+      "Compatibility": "Food processing cylinders",
+      "Material": "FDA approved silicone",
+      "Temperature Range": "-40°C to 180°C",
+      "Pressure Rating": "Up to 8 bar"
+    },
+    features: [
+      "FDA approved materials",
+      "Food-safe certification",
+      "High-temperature resistance",
+      "Easy cleaning"
+    ],
+    applications: [
+      "Food processing equipment",
+      "Pharmaceutical manufacturing",
+      "Clean room applications"
+    ],
+    relatedProducts: ["SK0004", "SK0006"]
+  },
+  {
+    id: 17,
+    modelNumber: "SK0006",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Marine-grade seal kit designed for harsh environmental conditions. Salt water and UV resistant for offshore applications.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Marine-Grade Seal Kit",
+      "Compatibility": "Marine pneumatic systems",
+      "Material": "EPDM/Fluorocarbon",
+      "Temperature Range": "-30°C to 110°C",
+      "Pressure Rating": "Up to 15 bar"
+    },
+    features: [
+      "Salt water resistant",
+      "UV stabilized",
+      "Corrosion protection",
+      "Long-term durability"
+    ],
+    applications: [
+      "Marine equipment",
+      "Offshore platforms",
+      "Coastal installations"
+    ],
+    relatedProducts: ["SK0005", "SK0007"]
+  },
+  {
+    id: 18,
+    modelNumber: "SK0007",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "High-temperature seal kit for extreme operating conditions. Specially formulated for furnaces and heat treatment applications.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "High-Temperature Seal Kit",
+      "Compatibility": "High-temp cylinders",
+      "Material": "Perfluoroelastomer",
+      "Temperature Range": "-20°C to 250°C",
+      "Pressure Rating": "Up to 20 bar"
+    },
+    features: [
+      "Extreme temperature capability",
+      "Chemical inertness",
+      "Low compression set",
+      "Thermal stability"
+    ],
+    applications: [
+      "Furnace applications",
+      "Heat treatment equipment",
+      "High-temperature processing"
+    ],
+    relatedProducts: ["SK0006", "SK0008"]
+  },
+  {
+    id: 19,
+    modelNumber: "SK0008",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Economy seal kit offering cost-effective solution for standard maintenance operations. Basic NBR seals for general purpose use.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Economy Seal Kit",
+      "Compatibility": "Standard cylinders",
+      "Material": "NBR (Standard grade)",
+      "Temperature Range": "-10°C to 70°C",
+      "Pressure Rating": "Up to 8 bar"
+    },
+    features: [
+      "Cost-effective solution",
+      "Standard performance",
+      "Easy availability",
+      "Basic functionality"
+    ],
+    applications: [
+      "General maintenance",
+      "Non-critical applications",
+      "Budget-conscious operations"
+    ],
+    relatedProducts: ["SK0007", "SK0055"]
+  },
+  {
+    id: 20,
+    modelNumber: "SK0055",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Premium performance seal kit with advanced polymer technology. Superior wear resistance and extended service intervals.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Premium Performance Kit",
+      "Compatibility": "Premium cylinders",
+      "Material": "Advanced TPU blend",
+      "Temperature Range": "-40°C to 130°C",
+      "Pressure Rating": "Up to 25 bar"
+    },
+    features: [
+      "Advanced polymer technology",
+      "Superior wear resistance",
+      "Extended service life",
+      "High-pressure capability"
+    ],
+    applications: [
+      "Critical applications",
+      "High-performance systems",
+      "Extended service intervals"
+    ],
+    relatedProducts: ["SK0008", "SK0056"]
+  },
+  {
+    id: 21,
+    modelNumber: "SK0056",
+    brand: "SealTech",
+    category: "Spare Kit",
+    description: "Quick-change seal kit with snap-fit design for rapid maintenance. Reduces downtime with tool-free installation.",
+    imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837",
+    specifications: {
+      "Kit Type": "Quick-Change Seal Kit",
+      "Compatibility": "Quick-change cylinders",
+      "Material": "Modified NBR",
+      "Temperature Range": "-15°C to 85°C",
+      "Pressure Rating": "Up to 12 bar"
+    },
+    features: [
+      "Snap-fit design",
+      "Tool-free installation",
+      "Rapid replacement",
+      "Reduced downtime"
+    ],
+    applications: [
+      "Production line maintenance",
+      "Quick service operations",
+      "Emergency repairs"
+    ],
+    relatedProducts: ["SK0055", "P-CYL-125-A"]
   }
 ];
+
+// Get unique categories
+export const getCategories = (): string[] => {
+  const categories = dummyProducts.map(product => product.category);
+  return [...new Set(categories)];
+};
 
 export const searchProduct = (modelNumber: string): Product | undefined => {
   // In a real app, this would be a fetch call to a Supabase database
@@ -375,10 +651,4 @@ export const getRelatedProducts = (modelNumbers: string[]): Product[] => {
   return dummyProducts.filter(product => 
     modelNumbers.includes(product.modelNumber)
   );
-};
-
-// Get unique categories
-export const getCategories = (): string[] => {
-  const categories = dummyProducts.map(product => product.category);
-  return [...new Set(categories)];
 };
