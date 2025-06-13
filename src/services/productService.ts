@@ -1,4 +1,3 @@
-
 export interface Product {
   id: number;
   modelNumber: string;
@@ -166,6 +165,192 @@ const dummyProducts: Product[] = [
       "For optimal performance, change element annually"
     ],
     relatedProducts: ["FRL-C400", "P-CYL-125-A"]
+  },
+  {
+    id: 6,
+    modelNumber: "PU-4MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 4mm outer diameter. Excellent flexibility and durability for compressed air applications up to 10 bar.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "4mm",
+      "Inner Diameter": "2.5mm",
+      "Wall Thickness": "0.75mm",
+      "Max Pressure": "10 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "Excellent flexibility",
+      "High burst pressure",
+      "Chemical resistant",
+      "UV resistant",
+      "Food grade approved"
+    ],
+    applications: [
+      "Pneumatic control lines",
+      "Instrument air systems",
+      "Food processing equipment",
+      "Medical devices"
+    ],
+    relatedProducts: ["PU-8MM-BLU", "QC-38-SS"]
+  },
+  {
+    id: 7,
+    modelNumber: "PU-8MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 8mm outer diameter. Perfect balance of flexibility and strength for medium pressure applications.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "8mm",
+      "Inner Diameter": "5.5mm",
+      "Wall Thickness": "1.25mm",
+      "Max Pressure": "12 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "Excellent flexibility",
+      "High burst pressure",
+      "Chemical resistant",
+      "UV resistant",
+      "Easy installation"
+    ],
+    applications: [
+      "General pneumatic systems",
+      "Automation equipment",
+      "Pneumatic tools",
+      "Industrial machinery"
+    ],
+    relatedProducts: ["PU-4MM-BLU", "PU-10MM-BLU"]
+  },
+  {
+    id: 8,
+    modelNumber: "PU-10MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 10mm outer diameter. Ideal for main air lines and high-flow applications with superior durability.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "10mm",
+      "Inner Diameter": "7mm",
+      "Wall Thickness": "1.5mm",
+      "Max Pressure": "15 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "High flow capacity",
+      "Superior durability",
+      "Chemical resistant",
+      "UV resistant",
+      "Kink resistant"
+    ],
+    applications: [
+      "Main air distribution",
+      "High-flow pneumatic systems",
+      "Heavy-duty equipment",
+      "Production line pneumatics"
+    ],
+    relatedProducts: ["PU-8MM-BLU", "PU-12MM-BLU"]
+  },
+  {
+    id: 9,
+    modelNumber: "PU-12MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 12mm outer diameter. Heavy-duty construction for demanding industrial applications and high-pressure systems.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "12mm",
+      "Inner Diameter": "8.5mm",
+      "Wall Thickness": "1.75mm",
+      "Max Pressure": "16 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "Heavy-duty construction",
+      "High pressure rating",
+      "Excellent abrasion resistance",
+      "Chemical resistant",
+      "Long service life"
+    ],
+    applications: [
+      "Heavy industrial applications",
+      "High-pressure pneumatic systems",
+      "Mining equipment",
+      "Construction machinery"
+    ],
+    relatedProducts: ["PU-10MM-BLU", "PU-14MM-BLU"]
+  },
+  {
+    id: 10,
+    modelNumber: "PU-14MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 14mm outer diameter. Extra heavy-duty design for maximum flow capacity and extreme operating conditions.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "14mm",
+      "Inner Diameter": "10mm",
+      "Wall Thickness": "2mm",
+      "Max Pressure": "18 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "Maximum flow capacity",
+      "Extra heavy-duty design",
+      "Superior abrasion resistance",
+      "Chemical resistant",
+      "Extreme durability"
+    ],
+    applications: [
+      "Large pneumatic cylinders",
+      "High-volume air systems",
+      "Industrial automation",
+      "Heavy machinery"
+    ],
+    relatedProducts: ["PU-12MM-BLU", "PU-16MM-BLU"]
+  },
+  {
+    id: 11,
+    modelNumber: "PU-16MM-BLU",
+    brand: "TubeMaster",
+    category: "PU Tubes",
+    description: "High-quality polyurethane pneumatic tube, 16mm outer diameter. Premium grade for the most demanding applications requiring maximum flow and pressure.",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    specifications: {
+      "Outer Diameter": "16mm",
+      "Inner Diameter": "12mm",
+      "Wall Thickness": "2mm",
+      "Max Pressure": "20 bar",
+      "Material": "Polyurethane",
+      "Color": "Blue",
+      "Temperature Range": "-40°C to 60°C"
+    },
+    features: [
+      "Premium grade construction",
+      "Maximum pressure rating",
+      "Exceptional flow capacity",
+      "Superior chemical resistance",
+      "Extended service life"
+    ],
+    applications: [
+      "Main air distribution networks",
+      "Large industrial systems",
+      "Heavy-duty pneumatic equipment",
+      "High-capacity applications"
+    ],
+    relatedProducts: ["PU-14MM-BLU", "FRL-C400"]
   }
 ];
 
